@@ -9,7 +9,7 @@ body {
   display: grid;
   justify-items: center;
   align-items: center;
-  background-color: #ff00f2;
+  background-color: #001eff;
 }
 
 #main-holder {
@@ -44,7 +44,7 @@ body {
   padding: 5px;
   font-size: 12px;
   font-weight: bold;
-  color: #ff0000;
+  color: #890000;
   border: 1px solid #ffbf00;
   background-color: #6aff00;
   opacity: 0;
@@ -62,7 +62,7 @@ body {
 }
 
 .login-form-field::placeholder {
-  color: #006aff;
+  color: #ff00bb;
 }
 
 .login-form-field {
@@ -81,7 +81,7 @@ body {
   border-radius: 5px;
   color: rgb(225, 0, 255);
   font-weight: bold;
-  background-color: #3a3a3a;
+  background-color: #00631f;
   cursor: pointer;
   outline: none;
 }
