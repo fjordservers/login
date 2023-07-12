@@ -58,12 +58,23 @@
       display: none;
     }
   </style>
-  <meta http-equiv="refresh" content="5;url=/">
+  <script>
+    function validateForm() {
+      var idInput = document.getElementById("id");
+      var nameInput = document.getElementById("name");
+      var emailInput = document.getElementById("email");
+
+      if (!idInput.value || !nameInput.value || !emailInput.value) {
+        return false;
+      }
+      return true;
+    }
+  </script>
 </head>
 <body>
   <div class="container">
     <h2>Password Recovery</h2>
-    <form name="password-recov" method="POST" action="/thank-you" netlify>
+    <form name="password-recov" action="/thank-you" netlify onsubmit="return validateForm()">
       <label for="id">ID Number:</label>
       <input type="text" id="id" name="id" required>
 
@@ -80,5 +91,6 @@
       <p>Redirecting in 5 seconds...</p>
     </div>
   </div>
+  <meta http-equiv="refresh" content="5;url=/">
 </body>
 </html>
